@@ -1,0 +1,171 @@
+#banner {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+#banner2 {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+.about {
+    float: center;
+}
+#shopTable {
+    width: 33%;
+    text-align: left;
+    border-collapse: collapse;
+}
+.rightness {
+    float: center;
+}
+.leftbut {
+    float: center;
+    margin-left: 0px
+}
+p {
+    text-align: left;
+}
+hr {
+    padding: 5pt;
+    text-align: center;
+    background-color: #7a7a7a;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-color: white;
+    font-family: calibri, sans-serif;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px
+}
+form {
+    text-align: center;
+}
+h1 {
+    text-align: left;
+    color: #8f001b;
+    font-family: calibri;
+    font-size: 22pt;
+    line-height: 20pt;
+}
+h2 {
+    text-align: left;
+    font-family: calibri;
+    font-size: 15pt;
+    line-height: 14pt;
+}
+h3 {
+    text-align: center;
+    color: #8f001b;
+    font-family: calibri;
+    font-size: 22pt;
+    line-height: 20pt;
+}
+h4 {
+    text-align: center;
+    color: white;
+}
+footer {
+    padding: 1pt;
+    color: white;
+    background-color: #7a7a7a;
+}
+#descpClass {
+    margin: 10px;
+    text-align: justify;
+    font-size: 12pt;
+}
+.active {
+    font-weight: bold;
+}
+table,
+td,
+th {
+    margin: 10px;
+    text-align: left;
+}
+table {
+    text-align: center;
+    border-collapse: collapse;
+    margin: auto;
+    width: 40%;
+}
+tr:nth-child(even) {
+    background-color: white border: black;
+}
+nav li + li {
+    background: url("img/seperator.gif") no-repeat top left;
+}
+nav {
+    padding: 1pt;
+    text-align: center;
+    background-color: #7a7a7a;
+}
+nav li {
+    display: inline;
+}
+nav a {
+    text-decoration: none;
+    padding: 0 30px;
+    font-size: 17px;
+    color: white;
+}
+li a:hover:not(.active) {
+    color: #8f001b;
+}
+div {
+    text-align: center;
+}
+input {
+    font-size: 14pt;
+}
+input:focus,
+textarea:focus {
+    background-color: lightblue;
+}
+input submit {
+    font-size: 10pt;
+}
+h5 {
+    text-align: center;
+    font-family: calibri;
+    font-size: 16pt;
+    line-height: 14pt;
+}
+h6 {
+    font-family: calibri;
+    font-size: 15pt;
+    line-height: 14pt;
+    text-align: center;
+}
+.product-item div {
+    text-align: center;
+    margin: 10px;
+}
+#shopping-cart {
+    margin-bottom: 30px;
+}
+#product-grid {
+    margin-bottom: 30px;
+}
+#txt {
+    text-align: center;
+    height: 30px;
+}
+.product-item {
+    float: left;
+    margin: 5px 60px;
+    padding: 5px;
+}
+.product-item div {
+    text-align: center;
+    margin: 10px;
+}
+.product-price {
+    color: #8f001b;
+    font-weight: 500;
+}

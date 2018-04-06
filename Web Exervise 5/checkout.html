@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>REKU Checkout</title>
+        <link rel="stylesheet" type="text/css" href="format.css">
+        <script language="javascript">
+
+        //main function to declare variables and call all validation functions.
+        function validateMain() {
+            var cardNum = document.getElementById("cardNum").value;
+            var securityCode = document.getElementById("securityCode").value;
+            var expireMonth = document.getElementById("expireMonth").value;
+            var expireYear = document.getElementById("expireYear").value;
+            var nameCard = document.getElementById("nameCard").value;
+
+            //if statement makes sure all fields are not blank.
+            if (nameCard == "" || cardNum == "" || securityCode == "" ||
+                expireMonth == "" || expireMonth == "") {
+                alert("Please fill in the whole form.");
+                return false;
+            }
+
+            //if statement passes the form and allows server to process the data.
+            if (cardNumber() == true && month() == true && year() == true && secureCode() == true ){
+                alert("Payment Successful! Thank you.");
+            }
+
+            //cardNumber()
+            //month();
+            //year();
+            //secureCode();
+        }
+
+        //validates card number. Requires 16 integers, no spaces or symbols.
+        function cardNumber() {
+            var cardNumber = /^\d{16}$/;
+            if (cardNum.value.match(cardNumber)) {
+                //alert("Valid Card Number.");
+                return true;
+            } else {
+                alert("Not a valid Visa credit card number!");
+                return false;
+            }
+        }
+
+        //validates expiry year.
+        function month() {
+            if (expireMonth.value > 0 && expireMonth.value <= 12) {
+                //alert("Valid expiry Month.");
+                return true;
+            } else {
+                alert("Not a valid expiry Month!");
+                return false;
+            }
+        }
+
+        //validates expiry year.
+        function year() {
+            if (expireYear.value >= 2017) {
+                //alert("Valid expiry Year.");
+                return true;
+            } else {
+                alert("Not a valid expiry Year!");
+                return false;
+            }
+        }
+
+        //validates security code. 3 integers.
+        function secureCode() {
+            var code = /^\d{3}$/;
+            if (securityCode.value.match(code)) {
+                //alert("Valid security code.");
+                return true;
+            } else {
+                alert("Invalid security code.");
+                return false;
+            }
+        }
+
+        //help functions used to output help message to HelpForm.
+        function cardHelp() {
+            document.helpForm.helpBox.value = "Your card number is the 16 digit number, shouldn't contain spaces.";
+        }
+
+        function monthHelp() {
+            document.helpForm.helpBox.value = "Your expiry month should be one of the 12 months.";
+        }
+
+        function yearHelp() {
+            document.helpForm.helpBox.value = "Your expiry year should be this year or a year in the future.";
+        }
+
+        function nameHelp() {
+            document.helpForm.helpBox.value = "Correct name should be present on your bank card.";
+        }
+
+        function codeHelp() {
+            document.helpForm.helpBox.value = "Security code is located on the back of your card. It will be three digit number.";
+        }
+
+        function blackMessage() {
+            document.helpForm.helpBox.value = "";
+        }
+    </script>
+
+</head>
+
+<header>
+    <br>
+    <img id="banner" src="img/banner.png" alt="Website Banner" width="1920" height="200">
+
+    </header>
+    <br>
+        <nav>
+            <ul>
+                <li><a href="home.php" >Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cart.php">My Basket</a></li>
+
+            </ul>
+        </nav>
+
+
+
+<body>
+
+<h5><u>Please enter your details to complete payment.</u></h5>
+    <form onSubmit=validateMain() name="myform"> 
+        <br>
+        Card number:<br> <input name="cardNum" id="cardNum" onfocus="cardHelp()" onblur="blackMessage()"><br><br> Expiry month:<br> <input type="text" id="expireMonth" onfocus="monthHelp()" onblur="blackMessage()"><br><br> Expiry year: <br><input type="text" id="expireYear" onfocus="yearHelp()" onblur="blackMessage()"><br><br>Name on card: <br><input type="text" id="nameCard" onfocus="nameHelp()" onblur="blackMessage()"><br><br> Security code(CCV):<br> <input type="text" id="securityCode" onfocus="codeHelp()" onblur="blackMessage()"><br><br>
+
+        <h6>Click button once form is completed.</h6>
+        <input type="submit" value="Send Payment"><br><br>
+    </form>
+
+    <form name="helpForm" action="#"> 
+        <textarea name="helpBox" rows="3" cols="45">  
+    </textarea>
+
+</body>
+</html>

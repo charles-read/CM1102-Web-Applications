@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Easter Algorithm CGI</title>
+        <link rel="stylesheet" type="text/css" href="format.css">
+    </head>
+        <img id="banner" src="banner.jpg" alt="Website Banner" width="1920" height="300"/>
+        <header>
+            <h1><u>Enter Year to find the Easter Sunday Date</u></h1>
+        </header>
+        <body>
+        <br>
+        <p>Easter is the Christian celebration of the anniversary of the Death and Resurrection of Jesus Christ. This happened on a <br>date representing the first Full Moon of Spring on the Jewish Calendar. Because of that, Easter Day is always the first<br> Sunday after the first calculated Full Moon on or after March 21st.</p>
+        <br>
+ 
+<form action="cgi-bin/easterDate.py" method="POST">
+  <label for="year">Enter Year:<br></label>
+  <input type="number" min="1" name="year" value="2017"><br><br>
+  
+  Presented Date Format:<br>
+
+  <input type="radio" name="formatDate" id="numericalForm" value="numericalForm">Numerically
+
+  <input type="radio" name="formatDate" id="verboselForm" value="verboselForm">Verbosely
+
+
+  <input type="radio" name="formatDate" value="both">Both Formats
+  
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+		
+        <br>
+        <table>
+            <tr>
+                <th>Format</th>
+                <th>Presentation</th>
+            </tr>
+            <tr>
+                <td>Numerically</td>
+                <td>dd/mm/year (e.g. 20/4/2003).</td>
+            </tr>
+            <tr>
+                <td>Verbosely</td>
+                <td>Day/of/named_month/year (e.g. 20th of April 2003).</td>
+            </tr>
+            <tr>
+                <td>Both</td>
+                <td>Both of these formats combined.</td>
+            </tr>
+        </table>
+        <br><br>
+        </body>   
+        <footer>Copyright © Charlie Read 2017</footer>
+</html>

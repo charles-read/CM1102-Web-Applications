@@ -1,0 +1,62 @@
+#banner {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+body {
+    background-color: #e0e0d1;
+    font-family: calibri, sans-serif;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px
+}
+form{
+    text-align:center;
+}
+h1 {
+    text-align: center;
+    font-family: calibri;
+    font-size: 25pt;
+    line-height: 14pt;
+}
+h2 {
+    font-family: calibri;
+    font-size: 15pt;
+    line-height: 14pt;
+    text-align: center;
+}
+header,
+footer {
+    padding: 1pt;
+    color: white;
+    background-color: #3c4d60;
+    text-align: center;
+}
+p {
+    text-align:center;
+        font-size: 13pt;
+}
+#banner {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+table,
+td,
+th {
+    border: 1px solid grey;
+    text-align: left;
+}
+table {
+    text-align: center;
+    border-collapse: collapse;
+    margin: auto;
+    width: 24%;
+}
+
+tr:nth-child(even) {
+    background-color: white
+}

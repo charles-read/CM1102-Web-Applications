@@ -1,0 +1,50 @@
+#banner {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+
+
+}
+header {
+    color: white;
+    background-color: #3c4d60;
+    text-align: center;
+}
+
+body {
+    text-align: center;
+    margin: auto;  
+    width: auto;  
+    background : #d7d9d5;  
+}
+form{
+    text-align:center;
+}
+h1 {
+    text-align: center;
+    font-family: calibri;
+    font-size: 16pt;
+    line-height: 14pt;
+}
+h2 {
+    font-family: calibri;
+    font-size: 15pt;
+    line-height: 14pt;
+    text-align: center;
+}
+
+
+input {  
+font-size: 20pt;  
+}  
+
+
+input:focus, 
+textarea:focus{  
+background-color: lightblue;  
+}  
+
+input submit {  
+font-size: 10pt;  
+}  
+ 
